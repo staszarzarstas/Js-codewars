@@ -1,0 +1,16 @@
+function maxRot(n) {
+
+var numbersArray =[];
+
+
+n = n.toString().split("")
+
+for(i=0;i<n.length;i++){
+   var extractedChars = n.splice(i,1)
+   n.push(extractedChars[0])
+   numbersArray.push(parseInt(n.join("")))
+}
+
+
+   return Math.max(...numbersArray)
+}
