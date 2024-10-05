@@ -6,15 +6,13 @@
 
 let str = "Sam Harris";
 function abbrevName(name){
-    let words = name.split(' '); // Разделяем строку на слова
-  return words[0][0].toUpperCase() + "." + words[1][0].toUpperCase(); // Берем первые буквы каждого слова
-    // return initials;
+    let words = name.split(' ');
+    let initials = words[0][0].toUpperCase() + "." + words[1][0].toUpperCase(); 
+    return initials;
 }
-console.log(abbrevName(str)); // Выведет: S.H
+console.log(abbrevName(str)); 
 
 
-// let str = ["C", "l", "a", "v", "i", "n", "H", "a", "c", 'h', 'b', 't'];
-// console.log(str.sort());
 
 
 
